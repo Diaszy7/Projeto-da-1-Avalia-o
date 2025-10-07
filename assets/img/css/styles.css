@@ -1,0 +1,359 @@
+:root {
+    --cor-fundo: #0a0a0f;
+    --cor-secundaria: #1a1a24;
+    --cor-destaque: #00bcd4;
+    --cor-texto: #f5f5f5;
+    --fonte-principal: 'Roboto', sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
+  }
+  
+  body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+  }
+  
+  header {
+    background-color: var(--cor-secundaria);
+    padding: 1rem 2rem;
+  }
+  
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-bar a {
+    color: var(--cor-texto);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav-bar a:hover {
+    color: var(--cor-destaque);
+  }
+  
+  .hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+
+    
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url("fundo1.jpg") center/cover no-repeat;
+}
+
+.hero h1,
+.hero p,
+.hero .btn {
+    position: relative; 
+    z-index: 1;
+}
+
+.btn {
+    background-color: #00bcd4;
+    border: none;
+    padding: 12px 24px;
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #03e9f4;
+    transform: scale(1.05);
+}
+  
+  .cards-section {
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background-color: var(--cor-secundaria);
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .table-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  .table-section th, .table-section td {
+    border: 1px solid var(--cor-destaque);
+    padding: 0.75rem;
+    text-align: center;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--cor-secundaria);
+    margin-top: 3rem;
+  }
+  
+  @media (max-width: 768px) {
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hero h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+.hero-sobre {
+  background: linear-gradient(rgba(10, 10, 15, 0.8), rgba(10,10,15,0.8)), url('../img/sobre-bg.jpg') center/cover;
+  height: 50vh;
+}
+
+.about-detalhes {
+  max-width: 900px;
+  margin: 3rem auto;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.about-detalhes h2 {
+  color: var(--cor-destaque);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+
+.mvv {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  background-color: var(--cor-secundaria);
+  text-align: center;
+}
+
+.mvv-card {
+  background-color: #11111a;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 280px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.mvv-card:hover {
+  transform: translateY(-10px);
+  background-color: #181824;
+}
+
+.mvv-card i {
+  font-size: 2rem;
+  color: var(--cor-destaque);
+  margin-bottom: 0.5rem;
+}
+
+.services-detalhes {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.servicos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.servico {
+  background-color: var(--cor-secundaria);
+  border-radius: 10px;
+  width: 280px;
+  padding: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.servico:hover {
+  transform: scale(1.05);
+}
+
+.servico i {
+  color: var(--cor-destaque);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+.planos {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.planos h2 {
+  color: var(--cor-destaque);
+  margin-bottom: 1rem;
+}
+
+.tabela-planos {
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 800px;
+  border-collapse: collapse;
+  background-color: var(--cor-secundaria);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tabela-planos th, .tabela-planos td {
+  padding: 1rem;
+  border-bottom: 1px solid #222;
+}
+
+.tabela-planos th {
+  background-color: var(--cor-destaque);
+  color: #000;
+}
+
+.tabela-planos tr:hover {
+  background-color: #11111a;
+}
+
+@media (max-width: 768px) {
+  .mvv, .servicos-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-detalhes {
+    padding: 0 1rem;
+  }
+}
+.contact-hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #0b0c10, #1f2833);
+  color: #66fcf1;
+}
+
+.contact-hero h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5em;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px;
+  background-color: #0b0c10;
+}
+
+.contact-info, .contact-form {
+  background: #1f2833;
+  padding: 30px;
+  border-radius: 10px;
+  color: #c5c6c7;
+  flex: 1;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(102, 252, 241, 0.2);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #0b0c10;
+  border: 1px solid #45a29e;
+  border-radius: 5px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn-enviar {
+  background-color: #45a29e;
+  color: #0b0c10;
+  font-weight: bold;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-enviar:hover {
+  background-color: #66fcf1;
+  transform: scale(1.05);
+}
+
+.social-icons img {
+  width: 30px;
+  margin: 10px;
+  filter: invert(1);
+  transition: 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+  filter: invert(69%) sepia(66%) saturate(316%) hue-rotate(130deg);
+}
+
+.mapa {
+  text-align: center;
+  background: #0b0c10;
+  padding: 60px 20px;
+}
+
+.mapa h2 {
+  color: #66fcf1;
+  margin-bottom: 20px;
+}
+
+
+
+
