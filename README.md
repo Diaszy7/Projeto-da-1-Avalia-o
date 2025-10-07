@@ -45,4 +45,4 @@ Basta abrir o arquivo `index.html` no navegador.
 ---
 
 © 2025 FallenStore — Todos os direitos reservados.
-# Projeto-da-1-Avalia-o
+# Projeto-da-1-Avaliação
